@@ -1,0 +1,26 @@
+<h1>Users#show</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+	<strong>Created Events:</strong>
+	<ul>
+		<%= render @user.events %>
+	</ul>
+</p>
+
+<p>
+	<strong>Upcoming Events:</strong>
+	<ul>
+		<%= render @upcoming_events %>
+	</ul>
+</p>
+
+<p>
+	<strong>Previously Attended Evetns:</strong>
+	<ul>
+		<%= render @prev_events %>
+	</ul>
+</p>

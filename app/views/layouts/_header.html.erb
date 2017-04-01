@@ -1,0 +1,7 @@
+<% if user_id = session[:user_id] %>
+  <header>
+    <nav>
+      Logged in user: <%= User.find(user_id).name %>
+    </nav>
+  </header>
+<% end %>

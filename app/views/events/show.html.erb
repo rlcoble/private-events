@@ -1,0 +1,9 @@
+<h1><%= @event.title %></h1>
+<p>Creator: <%= @event.creator.name %></p>
+
+<p>
+	<strong>Attendees:</strong>
+	<ul>
+		<%= render @event.attendees %>
+	</ul>
+</p>
